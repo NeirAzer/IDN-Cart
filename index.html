@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="public/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="src/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-thin.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-solid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-regular.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-light.css"
+    />
+    <title>IDN Cart</title>
+  </head>
+  <body class="font-poppins">
+    <!-- Header -->
+    <header class="shadow-sm py-4 bg-white">
+      <div class="container flex items-center justify-between">
+        <!-- Logo -->
+        <a href="index.html">
+          <img src="/public/images/logo.svg" alt="" />
+        </a>
+
+        <!-- Search bar -->
+        <div class="w-full max-w-xl relative flex">
+          <span class="absolute left-4 top-3 text-lg text-primary">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </span>
+          <input
+            class="w-full border border-primary border-r-0 pl-12 py-3 pr-3 rounded-l-md focus:outline-none"
+            type="text"
+            placeholder="Search"
+          />
+          <button
+            class="bg-primary border border-primary text-white px-8 rounded-r-md hover:bg-primary-subtle hover:text-primary transition"
+          >
+            Search
+          </button>
+        </div>
+
+        <!-- Icons -->
+        <div class="flex space-x-4">
+          <a
+            href=""
+            class="text-gray-800 text-center hover:text-primary transition relative"
+          >
+            <div class="text-2xl">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <div class="text-xs leading-3">Wishlist</div>
+            <span
+              class="absolute w-4 h-4 text-xs text-white bg-primary rounded-full flex justify-center items-center -top-1 font-bold right-0"
+              >5</span
+            >
+          </a>
+          <a
+            href=""
+            class="text-gray-800 text-center hover:text-primary transition relative"
+          >
+            <div class="text-2xl">
+              <i class="fa-duotone fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class="text-xs leading-3">Cart</div>
+            <span
+              class="absolute w-4 h-4 text-xs text-white bg-primary rounded-full flex justify-center items-center -top-1 font-bold -right-2"
+              >1</span
+            >
+          </a>
+          <a
+            href=""
+            class="text-gray-800 text-center hover:text-primary transition relative"
+          >
+            <div class="text-2xl">
+              <i class="fa-duotone fa-solid fa-user"></i>
+            </div>
+            <div class="text-xs leading-3">Account</div>
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Navigation -->
+    <nav class="bg-gray-800">
+      <div class="container flex">
+        <!-- All Categories -->
+        <div
+          class="bg-primary px-8 py-4 flex items-center cursor-pointer relative group"
+        >
+          <span class="text-white mr-1">
+            <i class="fa-solid fa-bars"></i>
+          </span>
+          <span class="text-white ml-2 capitalize">All Categories</span>
+          <!-- Dropdown -->
+          <div
+            class="bg-white shadow absolute w-full top-full left-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300 ease-in-out"
+          >
+            <!-- Single Category -->
+            <a
+              href=""
+              class=" hover:fill-gray-600 flex px-6 py-3 items-center hover:bg-gray-400 transition"
+            >
+              <img
+                class="w-5 h-5 object-contain"
+                src="public/images/icons/sofa.svg"
+                alt=""
+              />
+              <span class="ml-6 text-gray-600 text-sm">Sofa</span>
+            </a>
+            <hr class="opacity-10" />
+            <a
+              href=""
+              class="flex px-6 py-3 items-center hover:bg-gray-400 transition"
+            >
+              <img
+                class="w-5 h-5 object-contain"
+                src="public/images/icons/bed.svg"
+                alt=""
+              />
+              <span class="ml-6 text-gray-600 text-sm">Bedroom</span>
+            </a>
+            <hr class="opacity-10" />
+
+            <a
+              href=""
+              class="flex px-6 py-3 items-center hover:bg-gray-400 transition"
+            >
+              <img
+                class="w-5 h-5 object-contain"
+                src="public/images/icons/phone.svg"
+                alt=""
+              />
+              <span class="ml-6 text-gray-600 text-sm">Smartphone</span>
+            </a>
+            <hr class="opacity-10" />
+
+            <a
+              href=""
+              class="flex px-6 py-3 items-center hover:bg-gray-400 transition"
+            >
+              <img
+                class="w-5 h-5 object-contain"
+                src="public/images/icons/office.svg"
+                alt=""
+              />
+              <span class="ml-6 text-gray-600 text-sm">Office</span>
+            </a>
+            <hr class="opacity-10" />
+
+            <a
+              href=""
+              class="flex px-6 py-3 items-center hover:bg-gray-400 transition"
+            >
+              <img
+                class="w-5 h-5 object-contain"
+                src="public/images/icons/outdoor-cafe.svg"
+                alt=""
+              />
+              <span class="ml-6 text-gray-600 text-sm">Outdoor</span>
+            </a>
+            <hr class="opacity-10" />
+
+            <a
+              href=""
+              class="flex px-6 py-3 items-center hover:bg-gray-400 transition"
+            >
+              <img
+                class="w-5 h-5 object-contain"
+                src="public/images/icons/restaurant.svg"
+                alt=""
+              />
+              <span class="ml-6 text-gray-600 text-sm">Dining</span>
+            </a>
+            <hr class="opacity-10" />
+
+            <a
+              href=""
+              class="flex px-6 py-3 items-center hover:bg-gray-400 transition"
+            >
+              <img
+                class="w-5 h-5 object-contain"
+                src="public/images/icons/bed-2.svg"
+                alt=""
+              />
+              <span class="ml-6 text-gray-600 text-sm">Mattress</span>
+            </a>
+            <!-- Single Category End -->
+          </div>
+          <!-- Dropdown End -->
+        </div>
+        <!-- All Categories End -->
+
+        <!-- Nav Links -->
+        <div class="flex justify-between items-center pl-12 grow">
+          <div class="flex space-x-6">
+            <a href="" class="text-gray-300 hover:text-white">Home</a>
+            <a href="" class="text-gray-300 hover:text-white">Shop</a>
+            <a href="" class="text-gray-300 hover:text-white">About Us</a>
+            <a href="" class="text-gray-300 hover:text-white">Contact Us</a>
+          </div>
+          <div class="flex space-x-6">
+            <a href="" class="text-gray-300 hover:text-white">Login</a>
+            <a href="" class="text-gray-300 hover:text-white">Register</a>
+          </div>
+        </div>
+        <!-- Nav Links End -->
+      </div>
+    </nav>
+    <!-- Navigation End -->
+  </body>
+</html>
