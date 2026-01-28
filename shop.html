@@ -246,29 +246,61 @@
             <div class="space-y-2">
               <!-- Single Category -->
               <div class="flex items-center">
-                <input type="checkbox" id="cat-1" class="text-primary focus:ring-0 rounded-sm cursor-pointer" />
-                <label for="cat-1" class="text-gray-600 ml-3 cursor-pointer capitalize">Sofa</label>
+                <input
+                  type="checkbox"
+                  id="cat-1"
+                  class="text-primary focus:ring-0 rounded-sm cursor-pointer"
+                />
+                <label
+                  for="cat-1"
+                  class="text-gray-600 ml-3 cursor-pointer capitalize"
+                  >Sofa</label
+                >
                 <div class="ml-auto text-gray-600 text-sm">(15)</div>
               </div>
               <!-- Single Category End -->
               <!-- Single Category -->
               <div class="flex items-center">
-                <input type="checkbox" id="cat-2" class="text-primary focus:ring-0 rounded-sm cursor-pointer" />
-                <label for="cat-2" class="text-gray-600 ml-3 cursor-pointer capitalize">Bed</label>
+                <input
+                  type="checkbox"
+                  id="cat-2"
+                  class="text-primary focus:ring-0 rounded-sm cursor-pointer"
+                />
+                <label
+                  for="cat-2"
+                  class="text-gray-600 ml-3 cursor-pointer capitalize"
+                  >Bed</label
+                >
                 <div class="ml-auto text-gray-600 text-sm">(5)</div>
               </div>
               <!-- Single Category End -->
               <!-- Single Category -->
               <div class="flex items-center">
-                <input type="checkbox" id="cat-3" class="text-primary focus:ring-0 rounded-sm cursor-pointer" />
-                <label for="cat-3" class="text-gray-600 ml-3 cursor-pointer capitalize">Office</label>
+                <input
+                  type="checkbox"
+                  id="cat-3"
+                  class="text-primary focus:ring-0 rounded-sm cursor-pointer"
+                />
+                <label
+                  for="cat-3"
+                  class="text-gray-600 ml-3 cursor-pointer capitalize"
+                  >Office</label
+                >
                 <div class="ml-auto text-gray-600 text-sm">(31)</div>
               </div>
               <!-- Single Category End -->
               <!-- Single Category -->
               <div class="flex items-center">
-                <input type="checkbox" id="cat-4" class="text-primary focus:ring-0 rounded-sm cursor-pointer" />
-                <label for="cat-4" class="text-gray-600 ml-3 cursor-pointer capitalize">Outdoor</label>
+                <input
+                  type="checkbox"
+                  id="cat-4"
+                  class="text-primary focus:ring-0 rounded-sm cursor-pointer"
+                />
+                <label
+                  for="cat-4"
+                  class="text-gray-600 ml-3 cursor-pointer capitalize"
+                  >Outdoor</label
+                >
                 <div class="ml-auto text-gray-600 text-sm">(7)</div>
               </div>
               <!-- Single Category End -->
@@ -281,33 +313,722 @@
             <div class="space-y-2">
               <!-- Single Category -->
               <div class="flex items-center">
-                <input type="checkbox" id="cat-5" class="text-primary focus:ring-0 rounded-sm cursor-pointer" />
-                <label for="cat-5" class="text-gray-600 ml-3 cursor-pointer capitalize">Sofa</label>
+                <input
+                  type="checkbox"
+                  id="cat-5"
+                  class="text-primary focus:ring-0 rounded-sm cursor-pointer"
+                />
+                <label
+                  for="cat-5"
+                  class="text-gray-600 ml-3 cursor-pointer capitalize"
+                  >Sofa</label
+                >
                 <div class="ml-auto text-gray-600 text-sm">(15)</div>
               </div>
               <!-- Single Category End -->
               <!-- Single Category -->
               <div class="flex items-center">
-                <input type="checkbox" id="cat-6" class="text-primary focus:ring-0 rounded-sm cursor-pointer" />
-                <label for="cat-6" class="text-gray-600 ml-3 cursor-pointer capitalize">Bed</label>
+                <input
+                  type="checkbox"
+                  id="cat-6"
+                  class="text-primary focus:ring-0 rounded-sm cursor-pointer"
+                />
+                <label
+                  for="cat-6"
+                  class="text-gray-600 ml-3 cursor-pointer capitalize"
+                  >Bed</label
+                >
                 <div class="ml-auto text-gray-600 text-sm">(5)</div>
               </div>
               <!-- Single Category End -->
               <!-- Single Category -->
               <div class="flex items-center">
-                <input type="checkbox" id="cat-7" class="text-primary focus:ring-0 rounded-sm cursor-pointer" />
-                <label for="cat-7" class="text-gray-600 ml-3 cursor-pointer capitalize">Office</label>
+                <input
+                  type="checkbox"
+                  id="cat-7"
+                  class="text-primary focus:ring-0 rounded-sm cursor-pointer"
+                />
+                <label
+                  for="cat-7"
+                  class="text-gray-600 ml-3 cursor-pointer capitalize"
+                  >Office</label
+                >
                 <div class="ml-auto text-gray-600 text-sm">(31)</div>
               </div>
               <!-- Single Category End -->
             </div>
           </div>
           <!-- Category Filter End -->
+          <!-- Price Filter -->
+          <div class="py-5">
+            <h3 class="text-xl text-gray-800 mb-3 uppercase">Price</h3>
+            <div class="mt-4 flex items-center gap-4">
+              <input
+                type="number"
+                class="w-full border border-gray-300 focus:border-primary focus:ring-0 px-3 py-1 text-gray-600 text-sm shadow-sm rounded"
+                placeholder="min"
+              />
+              <span>-</span>
+              <input
+                type="number"
+                class="w-full border-gray-300 focus:border-primary focus:ring-0 px-3 py-1 text-gray-600 text-sm shadow-sm rounded"
+                placeholder="max"
+              />
+            </div>
+          </div>
+          <!-- Price Filter End -->
+          <!-- Size Filter -->
+          <div class="py-5">
+            <h3 class="text-xl text-gray-800 mb-3 uppercase">Size</h3>
+            <div class="flex items-center gap-2">
+              <!-- Single Size -->
+              <div class="size-selector">
+                <input type="radio" class="hidden" name="size" id="xs" />
+                <label
+                  for="xs"
+                  class="text-xs border border-gray-200 rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow-sm"
+                  >XS</label
+                >
+              </div>
+              <!-- Single Size End -->
+              <!-- Single Size -->
+              <div class="size-selector">
+                <input type="radio" class="hidden" name="size" id="s" />
+                <label
+                  for="s"
+                  class="text-xs border border-gray-200 rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow-sm"
+                  >S</label
+                >
+              </div>
+              <!-- Single Size End -->
+              <!-- Single Size -->
+              <div class="size-selector">
+                <input type="radio" class="hidden" name="size" id="m" />
+                <label
+                  for="m"
+                  class="text-xs border border-gray-200 rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow-sm"
+                  >M</label
+                >
+              </div>
+              <!-- Single Size End -->
+              <!-- Single Size -->
+              <div class="size-selector">
+                <input type="radio" class="hidden" name="size" id="l" />
+                <label
+                  for="l"
+                  class="text-xs border border-gray-200 rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow-sm"
+                  >L</label
+                >
+              </div>
+              <!-- Single Size End -->
+              <!-- Single Size -->
+              <div class="size-selector">
+                <input type="radio" class="hidden" name="size" id="xl" />
+                <label
+                  for="xl"
+                  class="text-xs border border-gray-200 rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow-sm"
+                  >XL</label
+                >
+              </div>
+              <!-- Single Size End -->
+            </div>
+          </div>
+          <!-- Size Filter End -->
+          <!-- Color Filter -->
+          <div class="py-5">
+            <h3 class="text-xl text-gray-800 mb-3 uppercase">Color</h3>
+            <div class="flex items-center gap-2">
+              <!-- Single Color -->
+              <div class="color-selector">
+                <input type="radio" name="color" class="hidden" id="red" />
+                <label
+                  for="red"
+                  class="border border-gray-200 w-5 h-5 block rounded-sm bg-primary shadow-sm cursor-pointer"
+                ></label>
+              </div>
+              <!-- Single Color End -->
+              <!-- Single Color -->
+              <div class="color-selector">
+                <input type="radio" name="color" class="hidden" id="black" />
+                <label
+                  for="black"
+                  class="border border-gray-200 w-5 h-5 block rounded-sm bg-black shadow-sm cursor-pointer"
+                ></label>
+              </div>
+              <!-- Single Color End -->
+              <!-- Single Color -->
+              <div class="color-selector">
+                <input type="radio" name="color" class="hidden" id="white" />
+                <label
+                  for="white"
+                  class="border border-gray-200 w-5 h-5 block rounded-sm bg-white shadow-sm cursor-pointer"
+                ></label>
+              </div>
+              <!-- Single Color End -->
+              <!-- Single Color -->
+              <div class="color-selector">
+                <input type="radio" name="color" class="hidden" id="cyan" />
+                <label
+                  for="cyan"
+                  class="border border-gray-200 w-5 h-5 block rounded-sm bg-cyan-400 shadow-sm cursor-pointer"
+                ></label>
+              </div>
+              <!-- Single Color End -->
+            </div>
+          </div>
+          <!-- Color Filter End -->
         </div>
       </div>
       <!-- Sidebar End -->
       <!-- Products -->
-      <div class="col-span-4"></div>
+      <div class="col-span-3">
+        <!-- Sorting -->
+        <div class="flex items-center mb-4">
+          <select
+            name=""
+            id=""
+            class="appearance-none w-44 text-sm text-gray-600 px-4 py-3 border-gray-300 shadow-sm rounded focus:ring-primary focus:border-primary"
+          >
+            <option value="">Default</option>
+            <option value="">Price low-high</option>
+            <option value="">Price high-low</option>
+            <option value="">Latest</option>
+          </select>
+
+          <div class="ml-auto flex gap-2">
+            <a
+              href=""
+              class="border border-primary w-10 h-9 flex items-center justify-center text-white bg-primary rounded cursor-pointer"
+            >
+              <i class="fa-duotone fa-solid fa-grid-2"></i>
+            </a>
+            <a
+              href=""
+              class="border border-primary w-10 h-9 flex items-center justify-center text-primary bg-white rounded cursor-pointer"
+            >
+              <i class="fa-solid fa-list"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Product Wrapper -->
+        <div class="grid grid-cols-3 gap-6 items-start">
+          <!-- Single Product -->
+          <div class="bg-white shadow rounded overflow-hidden group">
+            <!-- Product Image -->
+            <div class="relative">
+              <img
+                class="w-full"
+                src="public/images/products/product1.jpg"
+                alt=""
+              />
+              <div
+                class="absolute inset-0 bg-black/60 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 duration-500 transform scale-70 group-hover:scale-100"
+              >
+                <a
+                  href=""
+                  class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:text-primary hover:bg-gray-800 transition duration-500"
+                >
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+                <a
+                  href=""
+                  class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:text-primary hover:bg-gray-800 transition duration-500"
+                >
+                  <i class="fa-solid fa-heart"></i>
+                </a>
+              </div>
+            </div>
+            <!-- Product Image End -->
+
+            <!-- Product Content -->
+            <div class="pt-4 pb-3 px-4">
+              <a href="">
+                <h4
+                  class="uppercase font-semibold text-xl mb-2 text-gray-800 hover:text-primary transition duration-500"
+                >
+                  Modern Sofa
+                </h4>
+                <div class="flex items-baseline space-x-2 mb-1">
+                  <span class="text-xl text-primary font-semibold"
+                    >Rp 250.000,00</span
+                  >
+                  <span class="text-sm text-gray-400 font-medium line-through"
+                    >Rp 330.000,00</span
+                  >
+                </div>
+                <div class="flex items-center gap-2 mb-3">
+                  <div class="text-yellow-300">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                  </div>
+                  <span class="text-xs text-gray-500">4.5 - 360 Reviews</span>
+                </div>
+                <a
+                  href=""
+                  class="bg-primary block w-full text-white hover:text-primary py-1 hover:bg-gray-800 transition duration-500 rounded text-center transform hover:scale-95"
+                  >Add to Cart</a
+                >
+              </a>
+            </div>
+            <!-- Product Content End -->
+          </div>
+          <!-- Single Product End -->
+          <!-- Single Product -->
+          <div class="bg-white shadow rounded overflow-hidden group">
+            <!-- Product Image -->
+            <div class="relative">
+              <img
+                class="w-full"
+                src="public/images/products/product2.jpg"
+                alt=""
+              />
+              <div
+                class="absolute inset-0 bg-black/60 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 duration-500 transform scale-70 group-hover:scale-100"
+              >
+                <a
+                  href=""
+                  class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:text-primary hover:bg-gray-800 transition duration-500"
+                >
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+                <a
+                  href=""
+                  class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:text-primary hover:bg-gray-800 transition duration-500"
+                >
+                  <i class="fa-solid fa-heart"></i>
+                </a>
+              </div>
+            </div>
+            <!-- Product Image End -->
+
+            <!-- Product Content -->
+            <div class="pt-4 pb-3 px-4">
+              <a href="">
+                <h4
+                  class="uppercase font-semibold text-xl mb-2 text-gray-800 hover:text-primary transition duration-500"
+                >
+                  Modern Chair
+                </h4>
+                <div class="flex items-baseline space-x-2 mb-1">
+                  <span class="text-xl text-primary font-semibold"
+                    >Rp 55.000,00</span
+                  >
+                  <span class="text-sm text-gray-400 font-medium line-through"
+                    >Rp 110.000,00</span
+                  >
+                </div>
+                <div class="flex items-center gap-2 mb-3">
+                  <div class="text-yellow-300">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                  </div>
+                  <span class="text-xs text-gray-500">4.5 - 360 Reviews</span>
+                </div>
+                <a
+                  href=""
+                  class="bg-primary block w-full text-white hover:text-primary py-1 hover:bg-gray-800 transition duration-500 rounded text-center transform hover:scale-95"
+                  >Add to Cart</a
+                >
+              </a>
+            </div>
+            <!-- Product Content End -->
+          </div>
+          <!-- Single Product End -->
+          <!-- Single Product -->
+          <div class="bg-white shadow rounded overflow-hidden group">
+            <!-- Product Image -->
+            <div class="relative">
+              <img
+                class="w-full"
+                src="public/images/products/product3.jpg"
+                alt=""
+              />
+              <div
+                class="absolute inset-0 bg-black/60 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 duration-500 transform scale-70 group-hover:scale-100"
+              >
+                <a
+                  href=""
+                  class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:text-primary hover:bg-gray-800 transition duration-500"
+                >
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+                <a
+                  href=""
+                  class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:text-primary hover:bg-gray-800 transition duration-500"
+                >
+                  <i class="fa-solid fa-heart"></i>
+                </a>
+              </div>
+            </div>
+            <!-- Product Image End -->
+
+            <!-- Product Content -->
+            <div class="pt-4 pb-3 px-4">
+              <a href="">
+                <h4
+                  class="uppercase font-semibold text-xl mb-2 text-gray-800 hover:text-primary transition duration-500"
+                >
+                  Modern Mattress
+                </h4>
+                <div class="flex items-baseline space-x-2 mb-1">
+                  <span class="text-xl text-primary font-semibold"
+                    >Rp 67.000,00</span
+                  >
+                  <span class="text-sm text-gray-400 font-medium line-through"
+                    >Rp 780.000,00</span
+                  >
+                </div>
+                <div class="flex items-center gap-2 mb-3">
+                  <div class="text-yellow-300">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                  </div>
+                  <span class="text-xs text-gray-500">4.5 - 360 Reviews</span>
+                </div>
+                <a
+                  href=""
+                  class="bg-primary block w-full text-white hover:text-primary py-1 hover:bg-gray-800 transition duration-500 rounded text-center transform hover:scale-95"
+                  >Add to Cart</a
+                >
+              </a>
+            </div>
+            <!-- Product Content End -->
+          </div>
+          <!-- Single Product End -->
+          <!-- Single Product -->
+          <div class="bg-white shadow rounded overflow-hidden group">
+            <!-- Product Image -->
+            <div class="relative">
+              <img
+                class="w-full"
+                src="public/images/products/product5.jpg"
+                alt=""
+              />
+              <div
+                class="absolute inset-0 bg-black/60 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 duration-500 transform scale-70 group-hover:scale-100"
+              >
+                <a
+                  href=""
+                  class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:text-primary hover:bg-gray-800 transition duration-500"
+                >
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+                <a
+                  href=""
+                  class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:text-primary hover:bg-gray-800 transition duration-500"
+                >
+                  <i class="fa-solid fa-heart"></i>
+                </a>
+              </div>
+            </div>
+            <!-- Product Image End -->
+
+            <!-- Product Content -->
+            <div class="pt-4 pb-3 px-4">
+              <a href="">
+                <h4
+                  class="uppercase font-semibold text-xl mb-2 text-gray-800 hover:text-primary transition duration-500"
+                >
+                  Modern Chair
+                </h4>
+                <div class="flex items-baseline space-x-2 mb-1">
+                  <span class="text-xl text-primary font-semibold"
+                    >Rp 130.000,00</span
+                  >
+                  <span class="text-sm text-gray-400 font-medium line-through"
+                    >Rp 250.000,00</span
+                  >
+                </div>
+                <div class="flex items-center gap-2 mb-3">
+                  <div class="text-yellow-300">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                  </div>
+                  <span class="text-xs text-gray-500">4.5 - 360 Reviews</span>
+                </div>
+                <a
+                  href=""
+                  class="bg-primary block w-full text-white hover:text-primary py-1 hover:bg-gray-800 transition duration-500 rounded text-center transform hover:scale-95"
+                  >Add to Cart</a
+                >
+              </a>
+            </div>
+            <!-- Product Content End -->
+          </div>
+          <!-- Single Product End -->
+          <!-- Single Product -->
+          <div class="bg-white shadow rounded overflow-hidden group">
+            <!-- Product Image -->
+            <div class="relative">
+              <img
+                class="w-full"
+                src="public/images/products/product1.jpg"
+                alt=""
+              />
+              <div
+                class="absolute inset-0 bg-black/60 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 duration-500 transform scale-70 group-hover:scale-100"
+              >
+                <a
+                  href=""
+                  class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:text-primary hover:bg-gray-800 transition duration-500"
+                >
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+                <a
+                  href=""
+                  class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:text-primary hover:bg-gray-800 transition duration-500"
+                >
+                  <i class="fa-solid fa-heart"></i>
+                </a>
+              </div>
+            </div>
+            <!-- Product Image End -->
+
+            <!-- Product Content -->
+            <div class="pt-4 pb-3 px-4">
+              <a href="">
+                <h4
+                  class="uppercase font-semibold text-xl mb-2 text-gray-800 hover:text-primary transition duration-500"
+                >
+                  Modern Sofa
+                </h4>
+                <div class="flex items-baseline space-x-2 mb-1">
+                  <span class="text-xl text-primary font-semibold"
+                    >Rp 250.000,00</span
+                  >
+                  <span class="text-sm text-gray-400 font-medium line-through"
+                    >Rp 330.000,00</span
+                  >
+                </div>
+                <div class="flex items-center gap-2 mb-3">
+                  <div class="text-yellow-300">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                  </div>
+                  <span class="text-xs text-gray-500">4.5 - 360 Reviews</span>
+                </div>
+                <a
+                  href=""
+                  class="bg-primary block w-full text-white hover:text-primary py-1 hover:bg-gray-800 transition duration-500 rounded text-center transform hover:scale-95"
+                  >Add to Cart</a
+                >
+              </a>
+            </div>
+            <!-- Product Content End -->
+          </div>
+          <!-- Single Product End -->
+          <!-- Single Product -->
+          <div class="bg-white shadow rounded overflow-hidden group">
+            <!-- Product Image -->
+            <div class="relative">
+              <img
+                class="w-full"
+                src="public/images/products/product2.jpg"
+                alt=""
+              />
+              <div
+                class="absolute inset-0 bg-black/60 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 duration-500 transform scale-70 group-hover:scale-100"
+              >
+                <a
+                  href=""
+                  class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:text-primary hover:bg-gray-800 transition duration-500"
+                >
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+                <a
+                  href=""
+                  class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:text-primary hover:bg-gray-800 transition duration-500"
+                >
+                  <i class="fa-solid fa-heart"></i>
+                </a>
+              </div>
+            </div>
+            <!-- Product Image End -->
+
+            <!-- Product Content -->
+            <div class="pt-4 pb-3 px-4">
+              <a href="">
+                <h4
+                  class="uppercase font-semibold text-xl mb-2 text-gray-800 hover:text-primary transition duration-500"
+                >
+                  Modern Chair
+                </h4>
+                <div class="flex items-baseline space-x-2 mb-1">
+                  <span class="text-xl text-primary font-semibold"
+                    >Rp 55.000,00</span
+                  >
+                  <span class="text-sm text-gray-400 font-medium line-through"
+                    >Rp 110.000,00</span
+                  >
+                </div>
+                <div class="flex items-center gap-2 mb-3">
+                  <div class="text-yellow-300">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                  </div>
+                  <span class="text-xs text-gray-500">4.5 - 360 Reviews</span>
+                </div>
+                <a
+                  href=""
+                  class="bg-primary block w-full text-white hover:text-primary py-1 hover:bg-gray-800 transition duration-500 rounded text-center transform hover:scale-95"
+                  >Add to Cart</a
+                >
+              </a>
+            </div>
+            <!-- Product Content End -->
+          </div>
+          <!-- Single Product End -->
+          <!-- Single Product -->
+          <div class="bg-white shadow rounded overflow-hidden group">
+            <!-- Product Image -->
+            <div class="relative">
+              <img
+                class="w-full"
+                src="public/images/products/product3.jpg"
+                alt=""
+              />
+              <div
+                class="absolute inset-0 bg-black/60 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 duration-500 transform scale-70 group-hover:scale-100"
+              >
+                <a
+                  href=""
+                  class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:text-primary hover:bg-gray-800 transition duration-500"
+                >
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+                <a
+                  href=""
+                  class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:text-primary hover:bg-gray-800 transition duration-500"
+                >
+                  <i class="fa-solid fa-heart"></i>
+                </a>
+              </div>
+            </div>
+            <!-- Product Image End -->
+
+            <!-- Product Content -->
+            <div class="pt-4 pb-3 px-4">
+              <a href="">
+                <h4
+                  class="uppercase font-semibold text-xl mb-2 text-gray-800 hover:text-primary transition duration-500"
+                >
+                  Modern Mattress
+                </h4>
+                <div class="flex items-baseline space-x-2 mb-1">
+                  <span class="text-xl text-primary font-semibold"
+                    >Rp 67.000,00</span
+                  >
+                  <span class="text-sm text-gray-400 font-medium line-through"
+                    >Rp 780.000,00</span
+                  >
+                </div>
+                <div class="flex items-center gap-2 mb-3">
+                  <div class="text-yellow-300">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                  </div>
+                  <span class="text-xs text-gray-500">4.5 - 360 Reviews</span>
+                </div>
+                <a
+                  href=""
+                  class="bg-primary block w-full text-white hover:text-primary py-1 hover:bg-gray-800 transition duration-500 rounded text-center transform hover:scale-95"
+                  >Add to Cart</a
+                >
+              </a>
+            </div>
+            <!-- Product Content End -->
+          </div>
+          <!-- Single Product End -->
+          <!-- Single Product -->
+          <div class="bg-white shadow rounded overflow-hidden group">
+            <!-- Product Image -->
+            <div class="relative">
+              <img
+                class="w-full"
+                src="public/images/products/product5.jpg"
+                alt=""
+              />
+              <div
+                class="absolute inset-0 bg-black/60 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 duration-500 transform scale-70 group-hover:scale-100"
+              >
+                <a
+                  href=""
+                  class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:text-primary hover:bg-gray-800 transition duration-500"
+                >
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+                <a
+                  href=""
+                  class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:text-primary hover:bg-gray-800 transition duration-500"
+                >
+                  <i class="fa-solid fa-heart"></i>
+                </a>
+              </div>
+            </div>
+            <!-- Product Image End -->
+
+            <!-- Product Content -->
+            <div class="pt-4 pb-3 px-4">
+              <a href="">
+                <h4
+                  class="uppercase font-semibold text-xl mb-2 text-gray-800 hover:text-primary transition duration-500"
+                >
+                  Modern Chair
+                </h4>
+                <div class="flex items-baseline space-x-2 mb-1">
+                  <span class="text-xl text-primary font-semibold"
+                    >Rp 130.000,00</span
+                  >
+                  <span class="text-sm text-gray-400 font-medium line-through"
+                    >Rp 250.000,00</span
+                  >
+                </div>
+                <div class="flex items-center gap-2 mb-3">
+                  <div class="text-yellow-300">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                  </div>
+                  <span class="text-xs text-gray-500">4.5 - 360 Reviews</span>
+                </div>
+                <a
+                  href=""
+                  class="bg-primary block w-full text-white hover:text-primary py-1 hover:bg-gray-800 transition duration-500 rounded text-center transform hover:scale-95"
+                  >Add to Cart</a
+                >
+              </a>
+            </div>
+            <!-- Product Content End -->
+          </div>
+          <!-- Single Product End -->
+        </div>
+        <!-- Product Wrapper End-->
+        <!-- Sorting End -->
+      </div>
       <!-- Products End -->
     </div>
     <!-- Shop Wrapper End -->
