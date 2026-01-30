@@ -1,0 +1,629 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="public/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="src/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-thin.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-solid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-regular.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-light.css"
+    />
+    <title>IDN Cart</title>
+  </head>
+  <body class="font-poppins">
+    <!-- Header -->
+    <header class="shadow-sm py-4 bg-white">
+      <div class="container flex items-center justify-between">
+        <!-- Logo -->
+        <a href="index.html">
+          <img src="/public/images/logo.svg" alt="" />
+        </a>
+
+        <!-- Search bar -->
+        <div class="w-full max-w-xl relative flex">
+          <span class="absolute left-4 top-3 text-lg text-primary">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </span>
+          <input
+            class="w-full border border-primary border-r-0 pl-12 py-3 pr-3 rounded-l-md focus:outline-none"
+            type="text"
+            placeholder="Search"
+          />
+          <button
+            class="bg-primary border border-primary text-white px-8 rounded-r-md hover:bg-primary-subtle hover:text-primary transition"
+          >
+            Search
+          </button>
+        </div>
+
+        <!-- Icons -->
+        <div class="flex space-x-4">
+          <a
+            href=""
+            class="text-gray-800 text-center hover:text-primary transition relative"
+          >
+            <div class="text-2xl">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <div class="text-xs leading-3">Wishlist</div>
+            <span
+              class="absolute w-4 h-4 text-xs text-white bg-primary rounded-full flex justify-center items-center -top-1 font-bold right-0"
+              >5</span
+            >
+          </a>
+          <a
+            href=""
+            class="text-gray-800 text-center hover:text-primary transition relative"
+          >
+            <div class="text-2xl">
+              <i class="fa-duotone fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class="text-xs leading-3">Cart</div>
+            <span
+              class="absolute w-4 h-4 text-xs text-white bg-primary rounded-full flex justify-center items-center -top-1 font-bold -right-2"
+              >1</span
+            >
+          </a>
+          <a
+            href="account.html"
+            class="text-gray-800 text-center hover:text-primary transition relative"
+          >
+            <div class="text-2xl">
+              <i class="fa-duotone fa-solid fa-user"></i>
+            </div>
+            <div class="text-xs leading-3">Account</div>
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Navigation -->
+    <nav class="bg-gray-800">
+      <div class="container flex">
+        <!-- All Categories -->
+        <div
+          class="bg-primary px-8 py-4 flex items-center cursor-pointer relative group"
+        >
+          <span class="text-white mr-1">
+            <i class="fa-solid fa-bars"></i>
+          </span>
+          <span class="text-white ml-2 capitalize">All Categories</span>
+          <!-- Dropdown -->
+          <div
+            class="bg-white shadow absolute w-full top-full left-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300 ease-in-out"
+          >
+            <!-- Single Category -->
+            <a
+              href=""
+              class="flex px-6 py-3 items-center hover:bg-gray-400 transition"
+            >
+              <img
+                class="w-5 h-5 object-contain"
+                src="public/images/icons/sofa.svg"
+                alt=""
+              />
+              <span class="ml-6 text-gray-600 text-sm">Sofa</span>
+            </a>
+            <hr class="opacity-10" />
+            <a
+              href=""
+              class="flex px-6 py-3 items-center hover:bg-gray-400 transition"
+            >
+              <img
+                class="w-5 h-5 object-contain"
+                src="public/images/icons/bed.svg"
+                alt=""
+              />
+              <span class="ml-6 text-gray-600 text-sm">Bedroom</span>
+            </a>
+            <hr class="opacity-10" />
+
+            <a
+              href=""
+              class="flex px-6 py-3 items-center hover:bg-gray-400 transition"
+            >
+              <img
+                class="w-5 h-5 object-contain"
+                src="public/images/icons/phone.svg"
+                alt=""
+              />
+              <span class="ml-6 text-gray-600 text-sm">Smartphone</span>
+            </a>
+            <hr class="opacity-10" />
+
+            <a
+              href=""
+              class="flex px-6 py-3 items-center hover:bg-gray-400 transition"
+            >
+              <img
+                class="w-5 h-5 object-contain"
+                src="public/images/icons/office.svg"
+                alt=""
+              />
+              <span class="ml-6 text-gray-600 text-sm">Office</span>
+            </a>
+            <hr class="opacity-10" />
+
+            <a
+              href=""
+              class="flex px-6 py-3 items-center hover:bg-gray-400 transition"
+            >
+              <img
+                class="w-5 h-5 object-contain"
+                src="public/images/icons/outdoor-cafe.svg"
+                alt=""
+              />
+              <span class="ml-6 text-gray-600 text-sm">Outdoor</span>
+            </a>
+            <hr class="opacity-10" />
+
+            <a
+              href=""
+              class="flex px-6 py-3 items-center hover:bg-gray-400 transition"
+            >
+              <img
+                class="w-5 h-5 object-contain"
+                src="public/images/icons/restaurant.svg"
+                alt=""
+              />
+              <span class="ml-6 text-gray-600 text-sm">Dining</span>
+            </a>
+            <hr class="opacity-10" />
+
+            <a
+              href=""
+              class="flex px-6 py-3 items-center hover:bg-gray-400 transition"
+            >
+              <img
+                class="w-5 h-5 object-contain"
+                src="public/images/icons/bed-2.svg"
+                alt=""
+              />
+              <span class="ml-6 text-gray-600 text-sm">Mattress</span>
+            </a>
+            <!-- Single Category End -->
+          </div>
+          <!-- Dropdown End -->
+        </div>
+        <!-- All Categories End -->
+
+        <!-- Nav Links -->
+        <div class="flex justify-between items-center pl-12 grow">
+          <div class="flex space-x-6">
+            <a href="index.html" class="text-gray-300 hover:text-white">Home</a>
+            <a href="shop.html" class="text-gray-300 hover:text-white">Shop</a>
+            <a href="" class="text-gray-300 hover:text-white">About Us</a>
+            <a href="" class="text-gray-300 hover:text-white">Contact Us</a>
+          </div>
+          <div class="flex space-x-6">
+            <a href="" class="text-gray-300 hover:text-white">Login</a>
+            <a href="" class="text-gray-300 hover:text-white">Register</a>
+          </div>
+        </div>
+        <!-- Nav Links End -->
+      </div>
+    </nav>
+    <!-- Navigation End -->
+
+    <!-- Breadcrum -->
+    <div class="container flex py-4 gap-2 items-center">
+      <a class="text-primary text-base -z-1" href="index.html">
+        <i class="fa-duotone fa-solid fa-house"></i>
+      </a>
+      <span class="text-gray-400 text-xs">
+        <i class="fa-solid fa-angle-right"></i>
+      </span>
+      <p class="text-gray-600 font-medium capitalize">My Account</p>
+    </div>
+    <!-- Breadcrum End -->
+
+    <!-- Account Wrapper -->
+    <div class="container grid grid-cols-12 pt-4 pb-16 gap-6 items-start">
+      <!-- Sidebar -->
+      <div class="col-span-3">
+        <!-- Account Sidebar -->
+        <div class="px-4 py-3 shadow flex items-center gap-4">
+          <div class="shrink-0">
+            <img
+              src="public/images/avatar.png"
+              alt=""
+              class="w-14 h-14 p-1 rounded-full object-cover"
+            />
+          </div>
+          <div class="grow">
+            <p class="text-gray-600">Hello</p>
+            <h4 class="text-gray-800 font-medium">Rezky Azhar S</h4>
+          </div>
+        </div>
+        <!-- Account Sidebar End -->
+        <!-- Sidebar Links -->
+        <div
+          class="mt-6 bg-white shadow rounded p-4 text-gray-600 divide-y divide-gray-200"
+        >
+          <!-- Single Link -->
+          <div class="pb-3 pl-8 space-y-1">
+            <a
+              href=""
+              class="relative text-primary block font-semibold capitalize transition transform hover:scale-105"
+            >
+              <span class="absolute -left-8 top-0 text-base">
+                <i class="fa-solid fa-address-card"></i>
+              </span>
+              Manage Account
+            </a>
+            <a
+              href=""
+              class="relative text-gray-800 hover:text-primary block capitalize transition transform hover:scale-105"
+            >
+              Profile Info
+            </a>
+            <a
+              href=""
+              class="relative text-gray-800 hover:text-primary block capitalize transition transform hover:scale-105"
+            >
+              Manage Address
+            </a>
+            <a
+              href=""
+              class="relative text-gray-800 hover:text-primary block capitalize transition transform hover:scale-105"
+            >
+              Change Password
+            </a>
+          </div>
+          <!-- Single Link End -->
+          <!-- Single Link -->
+          <div class="py-3 pl-8 space-y-1">
+            <a
+              href=""
+              class="relative text-gray-800 hover:text-primary block font-semibold capitalize transition transform hover:scale-105"
+            >
+              <span class="absolute -left-8 top-0 text-base">
+                <i class="fa-solid fa-bag-shopping"></i>
+              </span>
+              My Order History
+            </a>
+            <a
+              href=""
+              class="relative text-gray-800 hover:text-primary block capitalize transition transform hover:scale-105"
+            >
+              My Return
+            </a>
+            <a
+              href=""
+              class="relative text-gray-800 hover:text-primary block capitalize transition transform hover:scale-105"
+            >
+              My Cancelations
+            </a>
+            <a
+              href=""
+              class="relative text-gray-800 hover:text-primary block capitalize transition transform hover:scale-105"
+            >
+              My Reviews
+            </a>
+          </div>
+          <!-- Single Link End -->
+          <!-- Single Link -->
+          <div class="py-3 pl-8 space-y-1">
+            <a
+              href=""
+              class="relative text-gray-800 hover:text-primary block font-semibold capitalize transition transform hover:scale-105"
+            >
+              <span class="absolute -left-8 top-0 text-base">
+                <i class="fa-solid fa-credit-card"></i>
+              </span>
+              Payment Methods
+            </a>
+            <a
+              href=""
+              class="relative text-gray-800 hover:text-primary block capitalize transition transform hover:scale-105"
+            >
+              Vouchers
+            </a>
+          </div>
+          <!-- Single Link End -->
+          <!-- Single Link -->
+          <div class="py-3 pl-8 space-y-1">
+            <a
+              href=""
+              class="relative text-gray-800 hover:text-primary block font-semibold capitalize transition transform hover:scale-105"
+            >
+              <span class="absolute -left-8 top-0 text-base">
+                <i class="fa-regular fa-heart"></i>
+              </span>
+              Wishlist
+            </a>
+          </div>
+          <!-- Single Link End -->
+          <!-- Single Link -->
+          <div class="py-3 pl-8 space-y-1">
+            <a
+              href=""
+              class="relative text-gray-800 hover:text-primary block font-semibold capitalize transition transform hover:scale-105"
+            >
+              <span class="absolute -left-8 top-0 text-base">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+              </span>
+              Logout
+            </a>
+          </div>
+          <!-- Single Link End -->
+        </div>
+        <!-- Sidebar Links End -->
+      </div>
+      <!-- Sidebar End -->
+      <!-- Profile -->
+      <div class="col-span-9 shadow rounded px-6 pt-5 pb-7">
+        <h4 class="text-xl font-medium capitalize">Profile Information</h4>
+        <div class="space-y-4">
+          <!-- Form Row -->
+          <div class="grid grid-cols-2 gap-4">
+            <!-- Single Input -->
+            <div>
+              <label for="" class="text-gray-600 mb-2 block">First Name</label>
+              <input
+                value="Rezky Azhar"
+                type="text"
+                class="input-box"
+                placeholder="Enter Your First Name..."
+              />
+            </div>
+            <!-- Single Input End -->
+            <!-- Single Input -->
+            <div>
+              <label for="" class="text-gray-600 mb-2 block">Last Name</label>
+              <input
+              value="Suryaputra"
+                type="text"
+                class="input-box"
+                placeholder="Enter Your Last Name..."
+              />
+            </div>
+            <!-- Single Input End -->
+          </div>
+          <!-- Form Row End -->
+          <!-- Form Row -->
+          <div class="grid grid-cols-2 gap-4">
+            <!-- Single Input -->
+            <div>
+              <label for="" class="text-gray-600 mb-2 block">Birthday</label>
+              <input value="2010-06-08" type="date" class="input-box" />
+            </div>
+            <!-- Single Input End -->
+            <!-- Single Input -->
+            <div>
+              <label for="" class="text-gray-600 mb-2 block">Gender</label>
+              <select required class="input-box" name="" id="">
+                <option value="">Male</option>
+                <option value="">Female</option>
+              </select>
+            </div>
+            <!-- Single Input End -->
+          </div>
+          <!-- Form Row End -->
+          <!-- Form Row -->
+          <div class="grid grid-cols-2 gap-4">
+            <!-- Single Input -->
+            <div>
+              <label for="" class="text-gray-600 mb-2 block">Email</label>
+              <input
+                type="email"
+                class="input-box"
+                placeholder="Enter Your Email..."
+                value="rezkyazharsuryaputra@gmail.com"
+              />
+            </div>
+            <!-- Single Input End -->
+            <!-- Single Input -->
+            <div>
+              <label for="" class="text-gray-600 mb-2 block">Phone Number</label>
+              <input type="number" class="input-box" placeholder="Enter Your Phone Number..." />
+            </div>
+            <!-- Single Input End -->
+          </div>
+          <!-- Form Row End -->
+           <div class="mt-4">
+            <button class="bg-primary border border-primary px-4 py-3
+            text-white font-medium rounded-md hover:bg-transparent hover:text-primary
+            transition uppercase">Save Changes</button>
+           </div>
+        </div>
+      </div>
+      <!-- Profile End -->
+    </div>
+    <!-- Account Wrapper -->
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 pt-16 pb-12 border-t border-gray-100">
+      <div class="container grid grid-cols-3 gap-8">
+        <!-- Footer Text -->
+        <div class="col-span-1 space-y-8">
+          <img class="w-30" src="public/images/logo.svg" alt="" />
+          <p class="text-gray-500">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          </p>
+          <div class="flex space-x-6">
+            <a
+              class="text-gray-400 hover:text-gray-500 transform hover:scale-125 transition"
+              href=""
+            >
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a
+              class="text-gray-400 hover:text-gray-500 transform hover:scale-125 transition"
+              href=""
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a
+              class="text-gray-400 hover:text-gray-500 transform hover:scale-125 transition"
+              href=""
+            >
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a
+              class="text-gray-400 hover:text-gray-500 transform hover:scale-125 transition"
+              href=""
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+        <!-- Footer Text End -->
+        <!-- Footer Links -->
+        <div class="col-span-2 grid grid-cols-2 gap-8">
+          <div class="grid grid-cols-2 gap-8">
+            <div class="">
+              <h3
+                class="text-sm font-semibold text-gray-400 uppercase tracking-wider"
+              >
+                Solutions
+              </h3>
+              <div class="mt-4 space-y-4">
+                <a
+                  href=""
+                  class="text-base text-gray-500 hover:text-gray-900 block transition transform hover:scale-105"
+                  >Marketing</a
+                >
+                <a
+                  href=""
+                  class="text-base text-gray-500 hover:text-gray-900 block transition transform hover:scale-105"
+                  >Analytics</a
+                >
+                <a
+                  href=""
+                  class="text-base text-gray-500 hover:text-gray-900 block transition transform hover:scale-105"
+                  >Commers</a
+                >
+                <a
+                  href=""
+                  class="text-base text-gray-500 hover:text-gray-900 block transition transform hover:scale-105"
+                  >Insight</a
+                >
+              </div>
+            </div>
+
+            <div class="">
+              <h3
+                class="text-sm font-semibold text-gray-400 uppercase tracking-wider"
+              >
+                Support
+              </h3>
+              <div class="mt-4 space-y-4">
+                <a
+                  href=""
+                  class="text-base text-gray-500 hover:text-gray-900 block transition transform hover:scale-105"
+                  >Documentation</a
+                >
+                <a
+                  href=""
+                  class="text-base text-gray-500 hover:text-gray-900 block transition transform hover:scale-105"
+                  >Guides</a
+                >
+                <a
+                  href=""
+                  class="text-base text-gray-500 hover:text-gray-900 block transition transform hover:scale-105"
+                  >pricing</a
+                >
+                <a
+                  href=""
+                  class="text-base text-gray-500 hover:text-gray-900 block transition transform hover:scale-105"
+                  >API Status</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="grid grid-cols-2 gap-8">
+            <div class="">
+              <h3
+                class="text-sm font-semibold text-gray-400 uppercase tracking-wider"
+              >
+                Company
+              </h3>
+              <div class="mt-4 space-y-4">
+                <a
+                  href=""
+                  class="text-base text-gray-500 hover:text-gray-900 block transition transform hover:scale-105"
+                  >About</a
+                >
+                <a
+                  href=""
+                  class="text-base text-gray-500 hover:text-gray-900 block transition transform hover:scale-105"
+                  >Blog</a
+                >
+                <a
+                  href=""
+                  class="text-base text-gray-500 hover:text-gray-900 block transition transform hover:scale-105"
+                  >Jobs</a
+                >
+                <a
+                  href=""
+                  class="text-base text-gray-500 hover:text-gray-900 block transition transform hover:scale-105"
+                  >Press</a
+                >
+              </div>
+            </div>
+
+            <div class="">
+              <h3
+                class="text-sm font-semibold text-gray-400 uppercase tracking-wider"
+              >
+                Legal
+              </h3>
+              <div class="mt-4 space-y-4">
+                <a
+                  href=""
+                  class="text-base text-gray-500 hover:text-gray-900 block transition transform hover:scale-105"
+                  >Claim</a
+                >
+                <a
+                  href=""
+                  class="text-base text-gray-500 hover:text-gray-900 block transition transform hover:scale-105"
+                  >Privacy</a
+                >
+                <a
+                  href=""
+                  class="text-base text-gray-500 hover:text-gray-900 block transition transform hover:scale-105"
+                  >Policy</a
+                >
+                <a
+                  href=""
+                  class="text-base text-gray-500 hover:text-gray-900 block transition transform hover:scale-105"
+                  >Terms</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Footer Links End -->
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Copyright -->
+    <div class="bg-gray-800 py-4">
+      <div class="container flex items-center justify-between">
+        <p class="text-white">&copy; IDNCART - All Rights Reserved</p>
+        <img class="h-5" src="public/images/methods.png" alt="" />
+      </div>
+    </div>
+    <!-- Copyright end -->
+  </body>
+</html>
