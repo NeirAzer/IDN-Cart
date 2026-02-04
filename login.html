@@ -214,7 +214,9 @@
             <a href="" class="text-gray-300 hover:text-white">Contact Us</a>
           </div>
           <div class="flex space-x-6">
-            <a href="login.html" class="text-gray-300 hover:text-white">Login</a>
+            <a href="login.html" class="text-gray-300 hover:text-white"
+              >Login</a
+            >
             <a href="" class="text-gray-300 hover:text-white">Register</a>
           </div>
         </div>
@@ -223,232 +225,65 @@
     </nav>
     <!-- Navigation End -->
 
-    <!-- Breadcrum -->
-    <div class="container flex py-4 gap-2 items-center">
-      <a class="text-primary text-base -z-1" href="index.html">
-        <i class="fa-duotone fa-solid fa-house"></i>
-      </a>
-      <span class="text-gray-400 text-xs">
-        <i class="fa-solid fa-angle-right"></i>
-      </span>
-      <p class="text-gray-600 font-medium capitalize">My Account</p>
-    </div>
-    <!-- Breadcrum End -->
+    <!-- Login Form -->
+    <div class="container py-16">
+      <div class="max-w-lg mx-auto shadow px-6 py-7 rounded overflow-hidden">
+        <h2 class="text-2xl uppercase font-medium mb-1">Login</h2>
+        <p class="text-gray-600 text-sm mb-6">Login to your existing account</p>
+        <form action="">
+          <div class="space-y-4">
+            <div>
+              <label for="" class="text-gray-600 mb-2 block"
+                >Email Address <span class="text-primary">*</span></label
+              >
+              <input type="email" class="input-box" placeholder="example@Email.com">
+            </div>
+            <div>
+              <label for="" class="text-gray-600 mb-2 block"
+                >Password <span class="text-primary">*</span></label
+              >
+              <input type="password" class="input-box" placeholder="Enter Password">
+            </div>
+            
+            <div class="flex items-center justify-between mt-6">
+                <div class="flex items-center">
+                    <input type="checkbox" class="text-primary focus:ring-0 rounded-sm cursor-pointer" id="remember">
+                    <label for="remember" class="text-gray-600 ml-3 cursor-pointer">Remember Me</label>
+                </div>
+                <a href="" class="text-primary">Forgot Password?</a>
+            </div>
 
-    <!-- Account Wrapper -->
-    <div class="container grid grid-cols-12 pt-4 pb-16 gap-6 items-start">
-      <!-- Sidebar -->
-      <div class="col-span-3">
-        <!-- Account Sidebar -->
-        <div class="px-4 py-3 shadow flex items-center gap-4">
-          <div class="shrink-0">
-            <img
-              src="public/images/avatar.png"
-              alt=""
-              class="w-14 h-14 p-1 rounded-full object-cover"
-            />
+            <div class="mt-4">
+                <a href="index.html" class="bg-primary block text-center text-white py-2
+                border border-primary rounded hover:bg-transparent
+                hover:text-primary transition uppercase font-medium">Login</a>
+            </div>
+            <!-- Login with -->
+             <div class="flex mt-6 justify-center relative">
+                <div class="text-gray-600 uppercase px-3 bg-white
+                z-10 relative">Or Login with</div>
+                <div class="absolute left-0 top-3 w-full border-b-2 border-gray-200"></div>
+             </div>
+             <div class="flex mt-4 gap-4">
+                <a href="" class="bg-blue-800 w-1/2 py-2 text-center text-white rounded uppercase
+                font-medium text-sm hover:bg-blue-600 transition">
+                    <i class="mr-2 fa-brands fa-facebook"></i>
+                    Facebook
+                </a>
+                <a href="" class="bg-gray-900 w-1/2 py-2 text-center text-white rounded uppercase
+                font-medium text-sm hover:bg-gray-600 transition">
+                    <i class="mr-2 fa-brands fa-github"></i>
+                    Github
+                </a>
+             </div>
+            <!-- Login with End -->
+            <p class="mt-4 text-gray-600 text-center text-xs">
+             Don't have an Account? <a href="register.html" class="text-primary hover:underline">Register Now</a></p>
           </div>
-          <div class="grow">
-            <p class="text-gray-600">Hello</p>
-            <h4 class="text-gray-800 font-medium">Rezky Azhar S</h4>
-          </div>
-        </div>
-        <!-- Account Sidebar End -->
-        <!-- Sidebar Links -->
-        <div
-          class="mt-6 bg-white shadow rounded p-4 text-gray-600 divide-y divide-gray-200"
-        >
-          <!-- Single Link -->
-          <div class="pb-3 pl-8 space-y-1">
-            <a
-              href=""
-              class="relative text-primary block font-semibold capitalize transition transform hover:scale-105"
-            >
-              <span class="absolute -left-8 top-0 text-base">
-                <i class="fa-solid fa-address-card"></i>
-              </span>
-              Manage Account
-            </a>
-            <a
-              href=""
-              class="relative text-gray-800 hover:text-primary block capitalize transition transform hover:scale-105"
-            >
-              Profile Info
-            </a>
-            <a
-              href=""
-              class="relative text-gray-800 hover:text-primary block capitalize transition transform hover:scale-105"
-            >
-              Manage Address
-            </a>
-            <a
-              href=""
-              class="relative text-gray-800 hover:text-primary block capitalize transition transform hover:scale-105"
-            >
-              Change Password
-            </a>
-          </div>
-          <!-- Single Link End -->
-          <!-- Single Link -->
-          <div class="py-3 pl-8 space-y-1">
-            <a
-              href=""
-              class="relative text-gray-800 hover:text-primary block font-semibold capitalize transition transform hover:scale-105"
-            >
-              <span class="absolute -left-8 top-0 text-base">
-                <i class="fa-solid fa-bag-shopping"></i>
-              </span>
-              My Order History
-            </a>
-            <a
-              href=""
-              class="relative text-gray-800 hover:text-primary block capitalize transition transform hover:scale-105"
-            >
-              My Return
-            </a>
-            <a
-              href=""
-              class="relative text-gray-800 hover:text-primary block capitalize transition transform hover:scale-105"
-            >
-              My Cancelations
-            </a>
-            <a
-              href=""
-              class="relative text-gray-800 hover:text-primary block capitalize transition transform hover:scale-105"
-            >
-              My Reviews
-            </a>
-          </div>
-          <!-- Single Link End -->
-          <!-- Single Link -->
-          <div class="py-3 pl-8 space-y-1">
-            <a
-              href=""
-              class="relative text-gray-800 hover:text-primary block font-semibold capitalize transition transform hover:scale-105"
-            >
-              <span class="absolute -left-8 top-0 text-base">
-                <i class="fa-solid fa-credit-card"></i>
-              </span>
-              Payment Methods
-            </a>
-            <a
-              href=""
-              class="relative text-gray-800 hover:text-primary block capitalize transition transform hover:scale-105"
-            >
-              Vouchers
-            </a>
-          </div>
-          <!-- Single Link End -->
-          <!-- Single Link -->
-          <div class="py-3 pl-8 space-y-1">
-            <a
-              href="wishlist.html"
-              class="relative text-gray-800 hover:text-primary block font-semibold capitalize transition transform hover:scale-105"
-            >
-              <span class="absolute -left-8 top-0 text-base">
-                <i class="fa-regular fa-heart"></i>
-              </span>
-              Wishlist
-            </a>
-          </div>
-          <!-- Single Link End -->
-          <!-- Single Link -->
-          <div class="py-3 pl-8 space-y-1">
-            <a
-              href=""
-              class="relative text-gray-800 hover:text-primary block font-semibold capitalize transition transform hover:scale-105"
-            >
-              <span class="absolute -left-8 top-0 text-base">
-                <i class="fa-solid fa-arrow-right-from-bracket"></i>
-              </span>
-              Logout
-            </a>
-          </div>
-          <!-- Single Link End -->
-        </div>
-        <!-- Sidebar Links End -->
+        </form>
       </div>
-      <!-- Sidebar End -->
-      <!-- Profile -->
-      <div class="col-span-9 shadow rounded px-6 pt-5 pb-7">
-        <h4 class="text-xl font-medium capitalize">Profile Information</h4>
-        <div class="space-y-4">
-          <!-- Form Row -->
-          <div class="grid grid-cols-2 gap-4">
-            <!-- Single Input -->
-            <div>
-              <label for="" class="text-gray-600 mb-2 block">First Name</label>
-              <input
-                value="Rezky Azhar"
-                type="text"
-                class="input-box"
-                placeholder="Enter Your First Name..."
-              />
-            </div>
-            <!-- Single Input End -->
-            <!-- Single Input -->
-            <div>
-              <label for="" class="text-gray-600 mb-2 block">Last Name</label>
-              <input
-              value="Suryaputra"
-                type="text"
-                class="input-box"
-                placeholder="Enter Your Last Name..."
-              />
-            </div>
-            <!-- Single Input End -->
-          </div>
-          <!-- Form Row End -->
-          <!-- Form Row -->
-          <div class="grid grid-cols-2 gap-4">
-            <!-- Single Input -->
-            <div>
-              <label for="" class="text-gray-600 mb-2 block">Birthday</label>
-              <input value="2010-06-08" type="date" class="input-box" />
-            </div>
-            <!-- Single Input End -->
-            <!-- Single Input -->
-            <div>
-              <label for="" class="text-gray-600 mb-2 block">Gender</label>
-              <select required class="input-box" name="" id="">
-                <option value="">Male</option>
-                <option value="">Female</option>
-              </select>
-            </div>
-            <!-- Single Input End -->
-          </div>
-          <!-- Form Row End -->
-          <!-- Form Row -->
-          <div class="grid grid-cols-2 gap-4">
-            <!-- Single Input -->
-            <div>
-              <label for="" class="text-gray-600 mb-2 block">Email</label>
-              <input
-                type="email"
-                class="input-box"
-                placeholder="Enter Your Email..."
-                value="rezkyazharsuryaputra@gmail.com"
-              />
-            </div>
-            <!-- Single Input End -->
-            <!-- Single Input -->
-            <div>
-              <label for="" class="text-gray-600 mb-2 block">Phone Number</label>
-              <input type="number" class="input-box" placeholder="Enter Your Phone Number..." />
-            </div>
-            <!-- Single Input End -->
-          </div>
-          <!-- Form Row End -->
-           <div class="mt-4">
-            <button class="bg-primary border border-primary px-4 py-3
-            text-white font-medium rounded-md hover:bg-transparent hover:text-primary
-            transition uppercase">Save Changes</button>
-           </div>
-        </div>
-      </div>
-      <!-- Profile End -->
     </div>
-    <!-- Account Wrapper -->
+    <!-- Login Form End -->
 
     <!-- Footer -->
     <footer class="bg-gray-100 pt-16 pb-12 border-t border-gray-100">
